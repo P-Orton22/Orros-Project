@@ -9,23 +9,26 @@
    #navbar{
        position: fixed;
        top: 0px;
+       right: 0px;
        left: 0px;
-       width: 250px;
-       height: 100vh;
+       height: 30px;
        background-color:rgb(48, 48, 48);
        border: 3px solid lightgrey;
        border-style: groove;
        font-size: 1.5em;
        font-family: Helvetica, sans-serif;
-       text-align: center;
+       text-align: justify;
        padding: 10px;
+       display:flex;
+       justify-content: space-evenly;
     }
     .nav-button{
             font-size: 1em;
             font-family: Helvetica, sans-serif;
-            width: 50%;
-            padding: 10px;
-            margin: 10px;
+            text-align: center;
+            width: 40%;
+            padding: 0px;
+            margin: 0px;
             border-radius: 1em;
     }
         .nav-button:hover{
@@ -38,7 +41,8 @@
        border-radius: 1em;
        background-image: linear-gradient(to bottom right, rgb(39, 39, 39), rgb(37, 75, 37), rgb(39, 39, 39));
        padding: 10px, 20px, 10px, 20px;
-       margin: auto 350px auto 350px;
+       position: relative;
+       top: 50px;
    }
    h1{
        color: lightgrey;
@@ -73,9 +77,11 @@
     </div>
     <navbar id="navbar">
         <button type="button" class="nav-button">Home</button>
-        <button type="button" class="nav-button">Locations</button>
+        <button type="button" class="nav-button">Geography</button>
         <button type="button" class="nav-button">History</button>
-        <button type="button" class="nav-button">Gods</button>
+        <button type="button" class="nav-button">Pantheon</button>
+        <button type="button" class="nav-button">Bestiary</button>
+        <button type="button" class="nav-button">Contact Us</button>
     </navbar>
     <p class="p-div">
         The Orros Campagins is a website that collects together background material, campaign scenarios, and rulesets for the tabletop
