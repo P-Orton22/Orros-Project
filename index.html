@@ -50,42 +50,36 @@
        text-align: center;
        padding-top: 80px;
    }
-   #flex-container{
-       display: flex;
-       height: 300px;
-       width: auto;
-       margin: 80px;
-       justify-content: space-between;
-   }
-   .p-div-left{
-       background-color: rgb(73, 73, 73);
-       border: 3px solid lightgrey;
-       margin: 1em;
-       padding: 25px;
-       flex-shrink: 1;
-   }
-   .flex-img{
-       box-shadow: 0px 5px 0.5em black;
-       margin: 1em;
-       flex-shrink: 1;
-   }
-   .p-div{
-       background-color: rgb(73, 73, 73);
-       width: 720px;
-       padding: 25px;
-       border: 3px solid lightgrey;
-       margin: 5% auto;
-   }
-   p{
-       color: lightgrey;
-       text-align: justify;
-       font-family: Arial, Helvetica, sans-serif;
-   }
    ul{
        list-style-type: none;
    }
    li{
        padding: 1em;
+   }
+   .grid1{
+       display: grid;
+       grid-template-columns: 70% 30%;
+       gap: 1em;
+       margin: 3em;
+   }
+   .grid1 > div:nth-child(even){
+       background: rgb(39, 39, 39);
+   }
+   .gridimg{
+       box-shadow: 0px 5px 0.5em black;
+       width: 100%;
+       display: cover;
+   }
+   .gridtext{
+       background: rgb(73, 73, 73);
+       padding: 1em;
+       border: 3px solid lightgrey;
+   }
+   .grid2{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 1em;
+       margin: 3em;
    }
 </style>
 </head>
@@ -103,29 +97,33 @@
         <button type="button" class="nav-button">Bestiary</button>
         <button type="button" class="nav-button">Contact Us</button>
     </navbar>
-    <div id="flex-container">
-        <p class="p-div-left">
-        The Orros Campagins is a website that collects together background material, campaign scenarios, and rulesets for the tabletop
-        RPG Pathfinder, all set within a homebrew fictional universe called 'The Orros Empire'. Here you can find information about the
-        geography, history, and culture of the setting. As well as a list of important characters, inspiration for creating your own
-        sessions within the setting, and stat blocks for the native wildlife and major npc's.
-        </br>
-        </br>
-        If you have any questions about any of the rules presented here, queries about the background information, or would like to find
-        a playgroup to join; feel free to contact us using the link provided above.
-        </p>
-        <img class="flex-img" src="https://www.otherworldlyincantations.com/wp-content/uploads/Otherworldly-Incantations-Landform-Worldbuilding.jpg" alt="fantasy landscape of mountains and rivers.">
+    <div class="grid1">
+        <div class="gridtext">
+            The Orros Campagins is a website that collects together background material, campaign scenarios, and rulesets for the tabletop
+            RPG Pathfinder, all set within a homebrew fictional universe called 'The Orros Empire'. Here you can find information about the
+            geography, history, and culture of the setting. As well as a list of important characters, inspiration for creating your own
+            sessions within the setting, and stat blocks for the native wildlife and major npc's.
+            </br>
+            </br>
+            If you have any questions about any of the rules presented here, queries about the background information, or would like to find
+            a playgroup to join; feel free to contact us using the link provided above.
+        </div>
+        <div>
+            <img class="gridimg" src="https://www.otherworldlyincantations.com/wp-content/uploads/Otherworldly-Incantations-Landform-Worldbuilding.jpg" alt="fantasy landscape of mountains and rivers.">
+        </div>
     </div>
     <hr size="1" width="90%">
-    <p class="p-div">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <div class="grid2">
+        <div>
+            <img class="gridimg" src="https://www.gamersdecide.com/sites/default/files/styles/news_images/public/paladin_subclass_main_image.jpg">
+        </div>
+        <div>
+            <img class="gridimg" src="https://images2.alphacoders.com/108/thumb-1920-1080232.jpg">
+        </div>
+        <div>
+            <img class="gridimg" src="https://295402-905923-raikfcquaxqncofqfm.stackpathdns.com//wp-content/uploads/2020/06/theros-gods-5e-678x381.jpg">
+        </div>
+    </div>
+    <hr size="1" width="90%">
     </body>
 </html>
